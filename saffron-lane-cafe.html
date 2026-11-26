@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Saffron Lane Café | Specialty Coffee & All-Day Kitchen, Hyderabad</title>
+  <meta name="description" content="Saffron Lane Café in Jubilee Hills, Hyderabad. Single-origin pour-overs, sourdough plates, artisanal bakes, live open-now hours, and instant WhatsApp table reservations.">
+  <meta name="keywords" content="cafe in Jubilee Hills, specialty coffee Hyderabad, Saffron Lane Cafe, brunch Hyderabad, artisanal bakery Hyderabad">
+  <meta name="theme-color" content="#FAF6F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#14110F" media="(prefers-color-scheme: dark)">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Saffron Lane Café — Jubilee Hills, Hyderabad">
+  <meta property="og:description" content="Slow mornings, roasted in Jubilee Hills. Specialty coffee, all-day breakfast, and courtyard seating.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CafeOrCoffeeShop",
+    "name": "Saffron Lane Café",
+    "image": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=80",
+    "telephone": "+919876543210",
+    "servesCuisine": ["Specialty Coffee", "All-Day Breakfast", "Artisanal Bakery"],
+    "priceRange": "₹₹",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Road No. 45, Jubilee Hills",
+      "addressLocality": "Hyderabad",
+      "addressRegion": "Telangana",
+      "postalCode": "500033",
+      "addressCountry": "IN"
+    },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "08:00",
+        "closes": "23:00"
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #FAF6F0;
+      --surface: #FFFDF9;
+      --surface-alt: #F3ECE2;
+      --ink: #221A14;
+      --muted: #6C5D52;
+      --line: #E5DDD2;
+      --accent: #B85224;
+      --accent-hover: #964019;
+      --herb: #2D6A4F;
+      --nonveg: #A12D2D;
+      --gold: #C88228;
+      --tint: #F7EAE1;
+      --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --max-w: 1180px;
+      --gutter: 22px;
+      --radius-sm: 6px;
+      --radius-md: 12px;
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #14110F;
+        --surface: #1D1815;
+        --surface-alt: #26201C;
+        --ink: #F5EFE6;
+        --muted: #A99B8E;
+        --line: #322A24;
+        --accent: #E28554;
+        --accent-hover: #F09C6E;
+        --herb: #52B788;
+        --nonveg: #E06C75;
+        --gold: #E9A84C;
+        --tint: #2B1E17;
+        color-scheme: dark;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #14110F;
+      --surface: #1D1815;
+      --surface-alt: #26201C;
+      --ink: #F5EFE6;
+      --muted: #A99B8E;
+      --line: #322A24;
+      --accent: #E28554;
+      --accent-hover: #F09C6E;
+      --herb: #52B788;
+      --nonveg: #E06C75;
+      --gold: #E9A84C;
+      --tint: #2B1E17;
+      color-scheme: dark;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; background: var(--bg); color: var(--ink); }
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      background: var(--bg);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      padding-bottom: 68px;
+    }
+    @media (min-width: 768px) { body { padding-bottom: 0; } }
+
+    a { color: inherit; text-decoration: none; }
+    button, input, select, textarea { font: inherit; color: inherit; }
+    button { cursor: pointer; border: none; background: none; }
+    img { display: block; max-width: 100%; height: auto; object-fit: cover; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--max-w);
+      margin-inline: auto;
+      padding-inline: var(--gutter);
+    }
+
+    .section {
+      padding-block: 76px;
+      border-bottom: 1px solid var(--line);
+    }
+    @media (max-width: 768px) { .section { padding-block: 52px; } }
+
+    .kicker {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    h2.sec-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 500;
+      line-height: 1.12;
+      letter-spacing: -0.015em;
+    }
+    h2.sec-title em { font-style: italic; color: var(--accent); }
+
+    .sec-sub {
+      margin-top: 12px;
+      color: var(--muted);
+      max-width: 56ch;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      min-height: 46px;
+      padding: 11px 22px;
+      border-radius: 999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: background-color 0.2s, transform 0.2s, border-color 0.2s;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-1px); }
+    .btn-primary { background: var(--accent); color: #fff; border: 1px solid var(--accent); }
+    .btn-primary:hover { background: var(--accent-hover); border-color: var(--accent-hover); }
+    .btn-outline { background: transparent; color: var(--ink); border: 1px solid var(--line); }
+    .btn-outline:hover { border-color: var(--ink); background: var(--surface); }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn-primary { color: #14110F; } }
+    :root[data-theme="dark"] .btn-primary { color: #14110F; }
+
+    /* Demo Strip */
+    .demo-strip {
+      background: var(--tint);
+      color: var(--accent);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 6px 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    /* Header */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(250, 246, 240, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) .site-header { background: rgba(20, 17, 15, 0.92); }
+    }
+    :root[data-theme="dark"] .site-header { background: rgba(20, 17, 15, 0.92); }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      min-height: 68px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .brand-name {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .open-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      color: var(--ink);
+    }
+    .open-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--herb);
+      box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.2);
+    }
+    .open-badge.closed .open-dot {
+      background: var(--nonveg);
+      box-shadow: 0 0 0 3px rgba(161, 45, 45, 0.2);
+    }
+
+    .nav-wrap {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-links {
+      display: none;
+      list-style: none;
+      gap: 24px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+    }
+    .nav-links a:hover { color: var(--ink); }
+    @media (min-width: 860px) { .nav-links { display: flex; } }
+
+    .theme-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+    }
+    .theme-btn:hover { border-color: var(--ink); }
+    .header-cta { display: none; }
+    @media (min-width: 600px) { .header-cta { display: inline-flex; } }
+
+    /* Hero */
+    .hero { padding-block: 48px 64px; border-bottom: 1px solid var(--line); }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+    @media (min-width: 900px) {
+      .hero-grid { grid-template-columns: 1.05fr 1fr; gap: 48px; }
+    }
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5.2vw, 3.9rem);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -0.02em;
+      margin-bottom: 18px;
+    }
+    .hero-title em { font-style: italic; color: var(--accent); }
+    .hero-sub {
+      font-size: 1.0625rem;
+      color: var(--muted);
+      max-width: 48ch;
+      margin-bottom: 28px;
+    }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 32px; }
+
+    .hero-facts {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.8125rem;
+    }
+    .hf-label { color: var(--muted); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    .hf-val { font-weight: 600; margin-top: 2px; }
+
+    .img-box {
+      position: relative;
+      overflow: hidden;
+      background: var(--line);
+      border-radius: var(--radius-md);
+    }
+    .img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
+    .img-box.img-fallback::after {
+      content: 'Saffron Lane Café';
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .hero-photo { aspect-ratio: 4 / 3; }
+
+    /* Menu */
+    .menu-controls {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin: 32px 0 28px;
+    }
+    .tabs {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar { display: none; }
+    .tab-btn {
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--muted);
+      white-space: nowrap;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .veg-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8125rem;
+      font-weight: 600;
+      padding: 7px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      cursor: pointer;
+    }
+    .veg-toggle[aria-pressed="true"] {
+      border-color: var(--herb);
+      background: rgba(45, 106, 79, 0.12);
+      color: var(--herb);
+    }
+
+    /* Indian Veg / Non-Veg Marker */
+    .diet-mark {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 14px;
+      height: 14px;
+      border: 1.5px solid var(--herb);
+      border-radius: 3px;
+      flex: none;
+      margin-top: 4px;
+    }
+    .diet-mark::after {
+      content: "";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--herb);
+    }
+    .diet-mark.nonveg { border-color: var(--nonveg); }
+    .diet-mark.nonveg::after { background: var(--nonveg); }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media (min-width: 720px) { .menu-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; } }
+
+    .menu-item {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .menu-item-left { display: flex; gap: 12px; align-items: flex-start; }
+    .menu-item-name {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+      line-height: 1.25;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .bestseller {
+      font-family: var(--font-body);
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: var(--tint);
+      color: var(--accent);
+    }
+    .menu-item-desc {
+      margin-top: 6px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+    .menu-item-price {
+      font-weight: 700;
+      font-size: 0.95rem;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Events */
+    .events-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 32px;
+    }
+    @media (min-width: 768px) { .events-grid { grid-template-columns: repeat(3, 1fr); } }
+    .event-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 18px;
+    }
+    .event-date {
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+    }
+    .event-title {
+      font-family: var(--font-serif);
+      font-size: 1.375rem;
+      margin: 6px 0 8px;
+      line-height: 1.2;
+    }
+    .event-desc { font-size: 0.875rem; color: var(--muted); }
+    .event-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+      font-size: 0.8125rem;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 32px;
+    }
+    @media (min-width: 720px) { .gallery-grid { grid-template-columns: repeat(3, 1fr); } }
+    .gallery-photo { aspect-ratio: 4 / 3; }
+    .gallery-photo:hover img { transform: scale(1.03); }
+    .gallery-cap { font-size: 0.8rem; color: var(--muted); margin-top: 8px; }
+
+    /* Reserve */
+    .reserve-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    @media (min-width: 840px) { .reserve-grid { grid-template-columns: 1fr 1.25fr; gap: 56px; } }
+    .info-list {
+      margin-top: 24px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      display: grid;
+      gap: 16px;
+      font-size: 0.9375rem;
+    }
+    .info-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+    .form-box {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 28px;
+    }
+    .form-grid { display: grid; gap: 16px; }
+    .form-2 { display: grid; grid-template-columns: 1fr; gap: 16px; }
+    @media (min-width: 560px) { .form-2 { grid-template-columns: 1fr 1fr; } }
+    .field label { display: block; font-size: 0.8125rem; font-weight: 600; margin-bottom: 6px; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      padding: 11px 14px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--bg);
+      font-size: 0.9rem;
+    }
+    .field textarea { min-height: 82px; resize: vertical; }
+    .err-msg { font-size: 0.78rem; color: var(--nonveg); margin-top: 4px; display: none; }
+    .err-msg.show { display: block; }
+
+    /* Reviews */
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      margin-top: 32px;
+    }
+    @media (min-width: 768px) { .reviews-grid { grid-template-columns: repeat(3, 1fr); } }
+    .rev-card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .rev-quote { font-size: 0.92rem; line-height: 1.6; }
+    .rev-meta { font-size: 0.8rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 12px; }
+
+    /* Footer */
+    .site-footer {
+      padding: 40px 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px 24px;
+      align-items: center;
+    }
+
+    /* Mobile bottom bar & Floating WA */
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 54px;
+      background: var(--surface);
+      border-top: 1px solid var(--line);
+      display: flex;
+      z-index: 95;
+    }
+    @media (min-width: 768px) { .mobile-bar { display: none; } }
+    .mobile-bar a {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      border-right: 1px solid var(--line);
+    }
+    .mobile-bar a:last-child { border-right: none; color: var(--accent); }
+
+    .wa-float {
+      position: fixed;
+      bottom: 68px;
+      right: 18px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: #25D366;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+      z-index: 94;
+    }
+    @media (min-width: 768px) { .wa-float { bottom: 24px; right: 24px; } }
+    .wa-float svg { width: 24px; height: 24px; fill: currentColor; }
+  </style>
+</head>
+<body>
+
+  <div id="demo-strip"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#top" class="brand-name" id="brand-name">Saffron Lane Café</a>
+        <span class="open-badge" id="open-badge" aria-live="polite">
+          <i class="open-dot" aria-hidden="true"></i>
+          <span id="open-text">Checking hours...</span>
+        </span>
+      </div>
+
+      <div class="nav-wrap">
+        <ul class="nav-links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#space">The Space</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+        <button class="theme-btn" id="theme-btn" type="button" aria-label="Toggle dark mode" aria-pressed="false">◐</button>
+        <a href="#reserve" class="btn btn-primary header-cta">Reserve a table</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="kicker" id="hero-kicker"></div>
+          <h1 class="hero-title" id="hero-title"></h1>
+          <p class="hero-sub" id="hero-sub"></p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Explore the menu</a>
+            <a href="#reserve" class="btn btn-outline">Reserve a table</a>
+          </div>
+          <div class="hero-facts" id="hero-facts"></div>
+        </div>
+        <div>
+          <div class="img-box hero-photo">
+            <img id="hero-img" src="" alt="" loading="eager" fetchpriority="high" onerror="imgErr(this)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section" id="menu">
+      <div class="container">
+        <div class="kicker">Kitchen &amp; Roastery</div>
+        <h2 class="sec-title">Freshly roasted, <em>made to order.</em></h2>
+        <p class="sec-sub">Single-origin Chikmagalur beans, 36-hour fermented sourdough, and pastries baked every morning at 6:30 AM.</p>
+
+        <div class="menu-controls">
+          <div class="tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+          <button type="button" class="veg-toggle" id="veg-toggle" aria-pressed="false">
+            <span class="diet-mark" aria-hidden="true" style="margin-top:0"></span>
+            <span>Veg only</span>
+          </button>
+        </div>
+
+        <div class="menu-grid" id="menu-grid"></div>
+      </div>
+    </section>
+
+    <!-- Events -->
+    <section class="section" id="events">
+      <div class="container">
+        <div class="kicker">Community</div>
+        <h2 class="sec-title">Weekend <em>gatherings.</em></h2>
+        <p class="sec-sub">Small-batch coffee tastings, acoustic courtyard evenings, and Saturday sourdough drops.</p>
+        <div class="events-grid" id="events-grid"></div>
+      </div>
+    </section>
+
+    <!-- The Space & Reviews -->
+    <section class="section" id="space">
+      <div class="container">
+        <div class="kicker">Atmosphere</div>
+        <h2 class="sec-title">A quiet corner in <em>Jubilee Hills.</em></h2>
+        <p class="sec-sub">Shaded courtyard tables, indoor work counters with power outlets, and warm afternoon light.</p>
+        <div class="gallery-grid" id="gallery-grid"></div>
+        <div class="reviews-grid" id="reviews-grid"></div>
+      </div>
+    </section>
+
+    <!-- Reserve a Table -->
+    <section class="section" id="reserve">
+      <div class="container reserve-grid">
+        <div>
+          <div class="kicker">Table Booking</div>
+          <h2 class="sec-title">Reserve a table on <em>WhatsApp.</em></h2>
+          <p class="sec-sub">Walk-ins are always welcome. For weekend brunch or groups of 4+, drop your details to hold a courtyard or indoor table.</p>
+          <div class="info-list" id="info-list"></div>
+        </div>
+
+        <div class="form-box">
+          <form id="reserve-form" class="form-grid" novalidate>
+            <div class="field">
+              <label for="r-name">Your Name *</label>
+              <input id="r-name" type="text" placeholder="e.g. Meera Rao" required>
+              <div class="err-msg" id="err-name">Please enter your name.</div>
+            </div>
+            <div class="form-2">
+              <div class="field">
+                <label for="r-guests">Guests</label>
+                <select id="r-guests">
+                  <option value="1 person">1 person (Work table)</option>
+                  <option value="2 people" selected>2 people</option>
+                  <option value="3–4 people">3–4 people</option>
+                  <option value="5–6 people">5–6 people</option>
+                  <option value="7+ group">7+ group</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="r-seat">Seating Preference</label>
+                <select id="r-seat">
+                  <option value="Shaded Courtyard">Shaded Courtyard</option>
+                  <option value="Indoor AC">Indoor AC</option>
+                  <option value="Window Work Counter">Window Work Counter</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-2">
+              <div class="field">
+                <label for="r-date">Date *</label>
+                <input id="r-date" type="date" required>
+                <div class="err-msg" id="err-date">Please pick a date.</div>
+              </div>
+              <div class="field">
+                <label for="r-time">Time Slot</label>
+                <select id="r-time">
+                  <option value="9:00 AM (Morning)">9:00 AM (Morning)</option>
+                  <option value="11:30 AM (Brunch)" selected>11:30 AM (Brunch)</option>
+                  <option value="2:00 PM (Afternoon)">2:00 PM (Afternoon)</option>
+                  <option value="5:30 PM (Evening)">5:30 PM (Evening)</option>
+                  <option value="8:00 PM (Dinner)">8:00 PM (Dinner)</option>
+                </select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="r-notes">Special Notes (Optional)</label>
+              <textarea id="r-notes" placeholder="Quiet table with plug point, high chair, birthday cake..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%">Confirm on WhatsApp</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span id="footer-copy"></span>
+      <span>Demo cafe website · Sample menu, prices &amp; reviews</span>
+    </div>
+  </footer>
+
+  <nav class="mobile-bar" aria-label="Quick actions">
+    <a href="#menu">Menu</a>
+    <a href="#events">Events</a>
+    <a href="#reserve">Reserve</a>
+  </nav>
+
+  <a id="wa-float" class="wa-float" target="_blank" rel="noopener noreferrer" aria-label="Message Saffron Lane Café on WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zm.01 18.06c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.216 8.216 0 0 1-1.26-4.29c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.23 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.78.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <script>
+    /**
+     * CONFIG — Replace sample photography, menu items, and phone number before launch.
+     */
+    const CONFIG = {
+      name: "Saffron Lane Café",
+      city: "Hyderabad",
+      address: "Plot 18, Road No. 45, Jubilee Hills, Hyderabad 500033",
+      mapsQuery: "https://maps.google.com/?q=Road+No+45+Jubilee+Hills+Hyderabad",
+      openHour: 8,   // 8:00 AM
+      closeHour: 23, // 11:00 PM
+      hoursText: "Open daily, 8:00 AM – 11:00 PM",
+      phone: "919876543210",
+      displayPhone: "+91 98765 43210",
+      instagram: "@saffronlanecafe",
+      demoBanner: true,
+
+      hero: {
+        kicker: "Jubilee Hills · Hyderabad",
+        titleLead: "Slow mornings, roasted in",
+        titleAccent: "Jubilee Hills.",
+        subline: "A neighborhood specialty coffee bar and all-day kitchen. Single-origin Chikmagalur brews, warm sourdough toast, and shaded courtyard tables.",
+        image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=85",
+        imageAlt: "Warm sunlit interior of Saffron Lane Café with wooden tables and espresso bar",
+        facts: [
+          { label: "Hours", val: "8:00 AM – 11:00 PM" },
+          { label: "Work-friendly", val: "Fast Wi-Fi & Power" },
+          { label: "Roast", val: "Chikmagalur 100% Arabica" },
+          { label: "Seating", val: "Courtyard & Indoor AC" }
+        ]
+      },
+
+      menuCategories: [
+        { id: "all", label: "All Items" },
+        { id: "coffee", label: "Coffee & Brews" },
+        { id: "breakfast", label: "All-Day Breakfast" },
+        { id: "plates", label: "Sandwiches & Plates" },
+        { id: "bakes", label: "Bakes & Pastries" }
+      ],
+
+      menu: [
+        { cat: "coffee", name: "Saffron Cardamom Cortado", price: 240, veg: true, best: true, desc: "Double espresso textured with steamed milk, Kashmir saffron infusion, and crushed green cardamom." },
+        { cat: "coffee", name: "V60 Single-Origin Pour Over", price: 260, veg: true, best: false, desc: "Washed Ratnagiri Estate roast. Notes of toasted almond, tangerine zest, and milk chocolate." },
+        { cat: "coffee", name: "18-Hour Cold Brew Tonic", price: 250, veg: true, best: true, desc: "Crisp Chikmagalur cold brew poured over artisanal tonic water and charred orange peel." },
+        { cat: "coffee", name: "Iced Cinnamon Oat Latte", price: 290, veg: true, best: false, desc: "Double ristretto shaken with oat milk, Ceylon cinnamon syrup, and sea salt." },
+
+        { cat: "breakfast", name: "Avocado & Dukkah Sourdough", price: 420, veg: true, best: true, desc: "36-hour country sourdough, smashed Hass avocado, roasted hazelnut dukkah, and pickled shallots." },
+        { cat: "breakfast", name: "Smoked Paprika Shakshuka", price: 440, veg: false, best: false, desc: "Two baked farm eggs in spiced San Marzano tomato sauce, whipped feta, and charred pita." },
+        { cat: "breakfast", name: "Kesar Ricotta Pancakes", price: 390, veg: false, best: true, desc: "Fluffy ricotta pancakes with saffron honey butter, toasted pistachios, and fresh figs." },
+        { cat: "breakfast", name: "Millet & Berry Granola Bowl", price: 360, veg: true, best: false, desc: "House-baked ragi & almond granola, Greek yogurt, seasonal berries, and wild forest honey." },
+
+        { cat: "plates", name: "Truffle Mushroom Melt", price: 430, veg: true, best: true, desc: "Thyme-roasted cremini mushrooms, aged cheddar, and caramelized onions pressed on brioche." },
+        { cat: "plates", name: "Herb Roast Chicken Baguette", price: 460, veg: false, best: false, desc: "Slow-roasted chicken breast, basil pesto, sun-dried tomatoes, and rocket on crisp baguette." },
+        { cat: "plates", name: "Burrata & Heirloom Tomato Tartine", price: 480, veg: true, best: false, desc: "Fresh creamy burrata, basil oil, balsamic glaze, and flaky sea salt on toasted country bread." },
+
+        { cat: "bakes", name: "French Butter Croissant", price: 190, veg: false, best: true, desc: "27-layer laminated pastry baked fresh every morning with cultured Normandy butter." },
+        { cat: "bakes", name: "Dark Chocolate Sea Salt Cookie", price: 170, veg: true, best: false, desc: "Eggless 70% dark couverture chocolate chunk cookie finished with Maldon sea salt." },
+        { cat: "bakes", name: "Pistachio Rose Tea Cake", price: 220, veg: true, best: false, desc: "Moist almond and pistachio sponge glazed with organic rosewater icing." }
+      ],
+
+      events: [
+        {
+          date: "Saturday · 10:30 AM",
+          title: "Home Pour-Over Brewing Workshop",
+          desc: "Learn grind calibration, water temperature, and V60 pouring technique with our head roaster. Includes a 250g bag of beans.",
+          meta: "₹850 · 6 spots left"
+        },
+        {
+          date: "Sunday · 6:00 PM",
+          title: "Acoustic Courtyard Evening",
+          desc: "Unplugged indie folk set under the neem tree. Special evening cold brew and flatbread menu served at your table.",
+          meta: "Free entry · RSVP table"
+        },
+        {
+          date: "Every Saturday · 9:00 AM",
+          title: "Sourdough & Croissant Batch Drop",
+          desc: "Limited batch of jalapeño-cheddar sourdough loaves and almond croissants straight out of our deck oven.",
+          meta: "Pre-order via WhatsApp"
+        }
+      ],
+
+      gallery: [
+        {
+          url: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=900&q=80",
+          alt: "Freshly poured latte art in stoneware cup",
+          cap: "Morning espresso & single-origin pour-overs"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?auto=format&fit=crop&w=900&q=80",
+          alt: "Cozy cafe seating with warm wood and greenery",
+          cap: "Shaded tables built for long conversations or work"
+        },
+        {
+          url: "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+          alt: "Freshly baked sourdough loaves and pastries",
+          cap: "Daily morning bakes from our in-house oven"
+        }
+      ],
+
+      reviews: [
+        { quote: "Best quiet work cafe in Jubilee Hills. The saffron cardamom cortado is genuinely balanced, not overly sweet, and every table has plug points.", author: "Rohan K.", loc: "Jubilee Hills · Sample Review" },
+        { quote: "Came for a quick coffee and stayed two hours for the truffle mushroom melt and French butter croissant. Calm courtyard vibe.", author: "Neha & Arjun", loc: "Banjara Hills · Sample Review" },
+        { quote: "Reserved a table for 6 on Sunday brunch via WhatsApp in 30 seconds. Food came out hot and the V60 pour-over was spot on.", author: "Siddharth M.", loc: "Gachibowli · Sample Review" }
+      ]
+    };
+
+    function imgErr(el) {
+      el.style.display = "none";
+      if (el.parentElement) el.parentElement.classList.add("img-fallback");
+    }
+
+    const $ = s => document.querySelector(s);
+
+    // Demo strip
+    if (CONFIG.demoBanner) {
+      $("#demo-strip").innerHTML = `<div class="demo-strip">Demo site — menu items, prices, events, and reviews are sample content for ${CONFIG.name}.</div>`;
+    }
+
+    // Live Open-Now Badge (IST UTC+5:30)
+    function updateOpenBadge() {
+      const now = new Date();
+      const istOffset = 330; // +5:30 in mins
+      const utcMins = now.getUTCHours() * 60 + now.getUTCMinutes();
+      const istMins = (utcMins + istOffset) % 1440;
+      const istHour = istMins / 60;
+      const isOpen = istHour >= CONFIG.openHour && istHour < CONFIG.closeHour;
+      const badge = $("#open-badge");
+      const text = $("#open-text");
+      if (isOpen) {
+        badge.classList.remove("closed");
+        text.textContent = "Open now · Closes 11 PM";
+      } else {
+        badge.classList.add("closed");
+        text.textContent = "Closed · Opens 8 AM";
+      }
+    }
+    updateOpenBadge();
+    setInterval(updateOpenBadge, 60000);
+
+    // Dark mode toggle
+    const root = document.documentElement, themeBtn = $("#theme-btn");
+    const isDark = () => root.dataset.theme ? root.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+    const syncTheme = () => themeBtn.setAttribute("aria-pressed", String(isDark()));
+    themeBtn.addEventListener("click", () => {
+      root.dataset.theme = isDark() ? "light" : "dark";
+      syncTheme();
+    });
+    syncTheme();
+
+    // Hero
+    $("#brand-name").textContent = CONFIG.name;
+    $("#hero-kicker").textContent = CONFIG.hero.kicker;
+    $("#hero-title").innerHTML = `${CONFIG.hero.titleLead} <em>${CONFIG.hero.titleAccent}</em>`;
+    $("#hero-sub").textContent = CONFIG.hero.subline;
+    $("#hero-img").src = CONFIG.hero.image;
+    $("#hero-img").alt = CONFIG.hero.imageAlt;
+    $("#hero-facts").innerHTML = CONFIG.hero.facts.map(f => `
+      <div>
+        <div class="hf-label">${f.label}</div>
+        <div class="hf-val">${f.val}</div>
+      </div>
+    `).join("");
+
+    // Menu rendering & filtering
+    let activeCat = "all";
+    let vegOnly = false;
+
+    function renderMenu() {
+      const items = CONFIG.menu.filter(item => {
+        const matchCat = activeCat === "all" || item.cat === activeCat;
+        const matchVeg = !vegOnly || item.veg;
+        return matchCat && matchVeg;
+      });
+      $("#menu-grid").innerHTML = items.map(item => `
+        <article class="menu-item">
+          <div class="menu-item-left">
+            <span class="diet-mark ${item.veg ? '' : 'nonveg'}" title="${item.veg ? 'Vegetarian' : 'Contains Egg / Non-Veg'}" aria-label="${item.veg ? 'Vegetarian' : 'Non-vegetarian'}"></span>
+            <div>
+              <h3 class="menu-item-name">
+                <span>${item.name}</span>
+                ${item.best ? '<span class="bestseller">House Favorite</span>' : ''}
+              </h3>
+              <p class="menu-item-desc">${item.desc}</p>
+            </div>
+          </div>
+          <div class="menu-item-price">₹${item.price}</div>
+        </article>
+      `).join("");
+    }
+
+    $("#menu-tabs").innerHTML = CONFIG.menuCategories.map((c, idx) => `
+      <button type="button" class="tab-btn ${idx === 0 ? 'active' : ''}" data-cat="${c.id}" role="tab" aria-selected="${idx === 0}">${c.label}</button>
+    `).join("");
+
+    $("#menu-tabs").addEventListener("click", e => {
+      const btn = e.target.closest(".tab-btn");
+      if (!btn) return;
+      document.querySelectorAll(".tab-btn").forEach(b => {
+        b.classList.remove("active");
+        b.setAttribute("aria-selected", "false");
+      });
+      btn.classList.add("active");
+      btn.setAttribute("aria-selected", "true");
+      activeCat = btn.dataset.cat;
+      renderMenu();
+    });
+
+    $("#veg-toggle").addEventListener("click", function () {
+      vegOnly = !vegOnly;
+      this.setAttribute("aria-pressed", String(vegOnly));
+      renderMenu();
+    });
+    renderMenu();
+
+    // Events
+    $("#events-grid").innerHTML = CONFIG.events.map(ev => `
+      <article class="event-card">
+        <div>
+          <div class="event-date">${ev.date}</div>
+          <h3 class="event-title">${ev.title}</h3>
+          <p class="event-desc">${ev.desc}</p>
+        </div>
+        <div class="event-foot">
+          <strong>${ev.meta}</strong>
+          <a href="https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(`Hi ${CONFIG.name}, I'd like to RSVP for: ${ev.title} (${ev.date}).`)}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-weight:700;">RSVP →</a>
+        </div>
+      </article>
+    `).join("");
+
+    // Gallery & Reviews
+    $("#gallery-grid").innerHTML = CONFIG.gallery.map(g => `
+      <figure>
+        <div class="img-box gallery-photo">
+          <img src="${g.url}" alt="${g.alt}" loading="lazy" onerror="imgErr(this)">
+        </div>
+        <figcaption class="gallery-cap">${g.cap}</figcaption>
+      </figure>
+    `).join("");
+
+    $("#reviews-grid").innerHTML = CONFIG.reviews.map(r => `
+      <div class="rev-card">
+        <p class="rev-quote">“${r.quote}”</p>
+        <div class="rev-meta"><strong>${r.author}</strong> · ${r.loc}</div>
+      </div>
+    `).join("");
+
+    // Contact Info & Default Date
+    $("#info-list").innerHTML = `
+      <div>
+        <div class="info-label">Address</div>
+        <div>${CONFIG.address} · <a href="${CONFIG.mapsQuery}" target="_blank" rel="noopener noreferrer" style="color:var(--accent);font-weight:600;">Directions →</a></div>
+      </div>
+      <div>
+        <div class="info-label">Hours</div>
+        <div>${CONFIG.hoursText}</div>
+      </div>
+      <div>
+        <div class="info-label">Phone &amp; Instagram</div>
+        <div><a href="tel:${CONFIG.phone}" style="font-weight:600;">${CONFIG.displayPhone}</a> · ${CONFIG.instagram}</div>
+      </div>
+    `;
+
+    const dateInput = $("#r-date");
+    dateInput.valueAsDate = new Date();
+
+    // Reservation Form
+    $("#reserve-form").addEventListener("submit", e => {
+      e.preventDefault();
+      const name = $("#r-name").value.trim();
+      const date = $("#r-date").value;
+      let ok = true;
+      if (!name) { $("#err-name").classList.add("show"); ok = false; } else { $("#err-name").classList.remove("show"); }
+      if (!date) { $("#err-date").classList.add("show"); ok = false; } else { $("#err-date").classList.remove("show"); }
+      if (!ok) return;
+
+      const guests = $("#r-guests").value;
+      const seat = $("#r-seat").value;
+      const time = $("#r-time").value;
+      const notes = $("#r-notes").value.trim() || "None";
+
+      const msg = [
+        `Hi ${CONFIG.name}, I'd like to reserve a table:`,
+        `• Name: ${name}`,
+        `• Guests: ${guests}`,
+        `• Date: ${date}`,
+        `• Time: ${time}`,
+        `• Seating: ${seat}`,
+        `• Notes: ${notes}`
+      ].join("\n");
+
+      window.open(`https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(msg)}`, "_blank");
+    });
+
+    $("#footer-copy").textContent = `© ${new Date().getFullYear()} ${CONFIG.name} · ${CONFIG.city}`;
+    $("#wa-float").href = `https://wa.me/${CONFIG.phone}?text=${encodeURIComponent(`Hi ${CONFIG.name}, I'd like to enquire about a table or menu item.`)}`;
+  </script>
+</body>
+</html>
